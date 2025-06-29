@@ -164,7 +164,8 @@ html{
     transition: all 0.3s ease;
     flex: 1 1 200px;
     max-width: 22%;
-    height: 280px;
+    min-height: 280px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -202,12 +203,13 @@ html{
     font-family: 'Bree Serif', serif;
     text-align: center;
     margin-top: 8px;
+    margin-bottom: 10px;
     line-height: 1.4;
     font-size: 0.9rem;
     flex-grow: 1;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     color: #333;
 }
@@ -216,7 +218,8 @@ html{
     #services .box {
         max-width: 30%;
         flex: 1 1 220px;
-        height: 300px;
+        min-height: 300px;
+        height: auto;
     }
 }
 

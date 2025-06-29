@@ -104,7 +104,8 @@
         }
         
         #services .box p {
-            -webkit-line-clamp: 4;
+            -webkit-line-clamp: 6;
+            margin-bottom: 10px;
         }
     }
     

@@ -19,6 +19,16 @@ document.addEventListener('DOMContentLoaded', function() {
             navMenu.classList.remove('active');
         });
     });
+    
+    // Contact form submission
+    const contactForm = document.querySelector('#contact-box form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('The form was submitted!');
+            contactForm.reset();
+        });
+    }
 });
 
 function chinese(){

@@ -37,7 +37,7 @@ html{
     opacity: 0.7;
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu - Hidden by default on all devices */
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -100,8 +100,8 @@ html{
 #home{
     display: flex;
     flex-direction: column;
-    padding: 3px 15%;
-    min-height: 80vh;
+    padding: 3px 12%;
+    min-height: 75vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -123,8 +123,8 @@ html{
     color:white;
     text-align: center;
     font-family: 'Bree Serif', serif;
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -140,31 +140,31 @@ html{
 }
 /* Services Section */
 #services-container {
-    padding: 50px 0;
-    margin-top: 15px;
+    padding: 40px 0;
+    margin-top: 20px;
     position: relative;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 #services{
-    margin: 20px auto;
     display: flex;
-    max-width: 1200px;
+    max-width: 1100px;
+    margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 #services .box{ 
     border: 2px solid brown;
-    padding: 15px;
+    padding: 12px;
     margin: 0;
     border-radius: 20px;
     background: #f2f2f2;
     transition: all 0.3s ease;
-    flex: 1 1 300px;
-    max-width: 30%;
-    height: 380px;
+    flex: 1 1 200px;
+    max-width: 22%;
+    height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -186,8 +186,8 @@ html{
 }
 
 #services .box img{ 
-   height: 80px;
-   margin: 10px auto 15px;
+   height: 65px;
+   margin: 8px auto 10px;
    display: block;
    width: auto;
    object-fit: contain;
@@ -201,21 +201,36 @@ html{
 #services .box p{
     font-family: 'Bree Serif', serif;
     text-align: center;
-    margin-top: 10px;
-    line-height: 1.5;
-    font-size: 0.95rem;
+    margin-top: 8px;
+    line-height: 1.4;
+    font-size: 0.9rem;
     flex-grow: 1;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     color: #333;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
     #services .box {
-        max-width: 45%;
-        flex: 1 1 250px;
+        max-width: 30%;
+        flex: 1 1 220px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    #services .box {
+        max-width: 22%;
+        flex: 1 1 200px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    #services .box {
+        max-width: 20%;
+        flex: 1 1 220px;
     }
 }
 
@@ -249,10 +264,10 @@ html{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px;
-    max-width: 1000px;
+    padding: 30px;
+    max-width: 900px;
     margin: 0 auto;
-    gap: 40px;
+    gap: 30px;
 }
 
 .client-item{
@@ -265,7 +280,7 @@ html{
 }
 
 #clients img{
-    height: 100px;
+    height: 80px;
     filter: grayscale(100%);
     transition: filter 0.3s ease;
 }
@@ -293,8 +308,8 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
-    max-width: 600px;
+    padding: 30px 0;
+    max-width: 550px;
     margin: 0 auto;
 }
 
@@ -336,23 +351,44 @@ html{
     margin-bottom: 15px;
 }
 
+.submit-btn {
+    background-color: #e27d60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.submit-btn:hover {
+    background-color: #c23616;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 footer{
     background: black;
     color: white;
-    padding: 9px 20px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
 }
 
 /* Utility Classes */
 .h-primary{
     font-family: 'Bree Serif', serif;
-    font-size: 3.8rem;
-    padding: 12px;
+    font-size: 3.2rem;
+    padding: 10px;
 }
 
 .h-secondary{
     font-family: 'Bree Serif', serif;
-    font-size: 2.3rem;
-    padding: 12px;
+    font-size: 1.9rem;
+    padding: 8px;
 }
 
 .btn{

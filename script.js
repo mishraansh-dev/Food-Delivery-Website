@@ -2,6 +2,25 @@ function clicked(){
     location.href='menu.html';
 };
 
+// Hamburger Menu Toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+    
+    // Close menu when clicking on a nav item
+    document.querySelectorAll('.nav-menu .item a').forEach(item => {
+        item.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+});
+
 function chinese(){
     location.href='chinese.html';
 };

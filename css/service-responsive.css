@@ -1,0 +1,220 @@
+/* Service Page Responsive Styles */
+
+/* Base styles for all devices */
+.text-gray-600 {
+    color: #718096;
+}
+
+.body-font {
+    font-family: 'Bree Serif', serif;
+}
+
+.container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+}
+
+/* Default grid layout */
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.-m-4 {
+    margin: -1rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+/* Image container */
+.h-48 {
+    height: 12rem;
+}
+
+.rounded {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.rounded:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.object-center {
+    object-position: center;
+}
+
+.block {
+    display: block;
+}
+
+/* Text styling */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.text-gray-500 {
+    color: #a0aec0;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.tracking-widest {
+    letter-spacing: 0.1em;
+}
+
+.title-font {
+    font-family: 'Bree Serif', serif;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.text-gray-900 {
+    color: #1a202c;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+/* Responsive breakpoints */
+
+/* Large screens (default) */
+.lg\:w-1\/4 {
+    width: 25%;
+}
+
+/* Medium screens */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .md\:w-1\/2 {
+        width: 50%;
+    }
+    
+    .container {
+        padding: 2rem 1rem;
+    }
+    
+    .py-24 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+    .container {
+        padding: 1.5rem 0.75rem;
+    }
+    
+    .p-4 {
+        padding: 0.75rem;
+    }
+    
+    .h-48 {
+        height: 10rem;
+    }
+    
+    /* On small screens, each item takes half width */
+    .lg\:w-1\/4 {
+        width: 50%;
+    }
+    
+    .py-24 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0.5rem;
+    }
+    
+    /* On extra small screens, each item takes full width */
+    .lg\:w-1\/4 {
+        width: 100%;
+    }
+    
+    .md\:w-1\/2 {
+        width: 100%;
+    }
+    
+    .p-4 {
+        padding: 0.5rem;
+    }
+    
+    /* Add space between items */
+    .flex > div {
+        margin-bottom: 1rem;
+    }
+    
+    .py-24 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .h-primary {
+        font-size: 2.5rem;
+        margin-top: 60px !important;
+    }
+}
+
+/* Fix for navbar on service page */
+@media (max-width: 1170px) {
+    #navbar {
+        flex-direction: column;
+    }
+    
+    #navbar ul li a {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Fix for the container padding */
+.py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* Add gap between items */
+.flex {
+    gap: 15px;
+}
